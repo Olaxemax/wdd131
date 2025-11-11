@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temple Album</title>
+  <meta name="description" content="Responsive Temple Album Page" />
+  <meta name="author" content="Olalemi" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/temples.css" />
+  <link rel="stylesheet" href="styles/temples-large.css" />
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menu">☰</button>
+    <nav class="navigation">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Temples</h2>
+    <div class="grid">
+      <figure>
+        <img src="images/temple-1.jpg" alt="Temple 1" />
+        <figcaption>Temple 1</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-2.png" alt="Temple 2" />
+        <figcaption>Temple 2</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Olalemi</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/temples.js"></script>
+</body>
+</html>
