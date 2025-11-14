@@ -8,7 +8,11 @@
   #menu {
     display: none;
   }
-
+nav a:hover {
+  background-color: #555;
+  color: #ffd700;
+  transition: background-color 0.3s, color 0.3s;
+}
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }

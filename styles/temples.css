@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -9,6 +9,12 @@ header {
   color: white;
   padding: 1rem;
   position: relative;
+}
+
+nav.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 nav {
