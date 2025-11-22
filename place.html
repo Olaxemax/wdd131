@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Country Page - Lagos, Nigeria - Olalemi Emmanuel </title>
+    <meta name="author" content="Olalemi Emmanuel">
+    <meta name="description" content="WDD 131 - Country Page for Olalemi Emmanuel Week03 Assignment">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="scripts/place.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Lagos, Nigeria</h1>
+  </header>
+
+  <section class="hero">
+    <picture>
+      <source srcset="images/lagos-small.webp" media="(max-width: 600px)">
+      <source srcset="images/lagos-small.webp" media="(max-width: 1024px)">
+      <img src="images/lagos-small.webp" alt="Skyline of Lagos, Nigeria">
+    </picture>
+  </section>
+
+  <section class="weather">
+    <h2>Weather <span class="icon"></span></h2>
+    <p>Temperature: <span id="temp">28</span> °C</p>
+    <p>Wind Speed: <span id="wind">12</span> km/h</p>
+    <p>Wind Chill: <span id="windchill"></span></p>
+  </section>
+
+  <section class="about">
+    <h2>About Lagos</h2>
+    <p>
+        Lagos is the largest city in Nigeria and one of the fastest-growing cities in the world. 
+      Known for its vibrant culture, bustling markets, beaches, and nightlife, Lagos is the 
+      economic hub of West Africa.
+    </p>
+  </section>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> ✺ Olalemi Emmanuel ✺ Lagos, Nigeria.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
