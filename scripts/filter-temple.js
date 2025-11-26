@@ -21,10 +21,36 @@ document.addEventListener("DOMContentLoaded", () => {
   { templeName: "Accra Ghana Temple", location: "Accra, Ghana", dedicated: "2004, January, 11", area: 17500,
     imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-5154-thumb.jpg" },
   { templeName: "Johannesburg South Africa Temple", location: "Johannesburg, South Africa", dedicated: "1985, August, 24", area: 19184,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-1029398-wallpaper.jpg" }
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/johannesburg-south-africa-temple/johannesburg-south-africa-temple-22475-thumb.jpg" }
 ];
 
   const gallery = document.querySelector("#gallery");
+
+function showTemples(list) {
+  gallery.innerHTML = "";
+  list.forEach(t => {
+    const figure = document.createElement("figure");
+    figure.classList.add("temple-card");
+
+    const img = document.createElement("img");
+    img.src = t.imageUrl;
+    img.alt = `${t.templeName} — ${t.location}`;
+    img.loading = "lazy";
+    img.decoding = "async";
+
+    const caption = document.createElement("figcaption");
+    caption.innerHTML = `
+      <span style="color:#e91e63;"><strong>${t.templeName}</strong></span><br>
+      <span style="color:#6a0dad;">${t.location}</span><br>
+      <span style="color:#009688;">Dedicated: ${t.dedicated}</span><br>
+      <span style="color:#ff9800;">Area: ${t.area.toLocaleString()} sq ft</span>
+    `;
+
+    figure.appendChild(img);
+    figure.appendChild(caption);
+    gallery.appendChild(figure);
+  });
+}
   const heading = document.querySelector("#gallery-heading");
 
   // Helper: extract year
