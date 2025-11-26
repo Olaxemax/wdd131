@@ -113,6 +113,9 @@ document.addEventListener("DOMContentLoaded", () => {
       figure.appendChild(img);
       figure.appendChild(caption);
       main.appendChild(figure);
+
+      void figure.offsetWidth;
+    figure.classList.add("temple-card");
     });
   }
 
