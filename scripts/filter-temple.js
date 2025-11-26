@@ -19,8 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
       imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg" },
     { templeName: "Mexico City Mexico", location: "Mexico City, Mexico", dedicated: "1983, December, 2", area: 116642,
       imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg" },
-    { templeName: "Accra Ghana Temple", location: "Accra, Ghana", dedicated: "2004, January, 11", area: 17500,
-      imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/400x250/accra-ghana-temple-5154.jpg" },
+      { 
+  templeName: "Accra Ghana Temple", 
+  location: "Accra, Ghana", 
+  dedicated: "2004, January, 11", 
+  area: 17500, 
+  imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x250/accra-ghana-temple-lds-1029399-wallpaper.jpg" 
+},
     { templeName: "Johannesburg South Africa Temple", location: "Johannesburg, South Africa", dedicated: "1985, August, 24", area: 19184,
       imageUrl: "https://tse2.mm.bing.net/th/id/OIP.v3senR2n1Pbosl_DkQ2POQHaHa?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" }
   ];
