@@ -4,15 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Temple Album</title>
-  <meta name="description" content="Olalemi Emmanuel |The Church of Jesus Christ Filtered Temple Picture Album | Responsive Temple Album Page" />
+  <meta name="description" content="Olalemi Emmanuel | The Church of Jesus Christ Filtered Temple Picture Album | Responsive Temple Album Page" />
   <meta name="author" content="Olalemi Emmanuel" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="styles/filter-temples.css" />
-  <link rel="stylesheet" href="styles/filter-temples-large.css" />
-  <script src="scripts/filter-temple.js"></script>
 
+  <!-- Load Nunito font to match CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/filter-temples.css" />
+  <link rel="stylesheet" href="styles/filter-temples-large.css" />
 </head>
 <body>
   <header>
@@ -24,19 +26,22 @@
         <li><a href="#" data-filter="old">Old</a></li>
         <li><a href="#" data-filter="new">New</a></li>
         <li><a href="#" data-filter="large">Large</a></li>
-        <li><a href="#" data-filter="small">Small</a></li>      </ul>
+        <li><a href="#" data-filter="small">Small</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
     <h2 id="gallery-heading">Temples</h2>
+    <!-- JS will dynamically inject temple cards here -->
   </main>
 
   <footer>
     <p>&copy; <span id="year-now"></span> | Olalemi | Lagos, Nigeria</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
+    <p id="page-update"></p> <!-- matches JS -->
   </footer>
 
+  <!-- Script only once at the bottom -->
   <script src="scripts/filter-temple.js"></script>
 </body>
 </html>
