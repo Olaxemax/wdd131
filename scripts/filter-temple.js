@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Footer year and last update
   document.querySelector("#year-now").textContent = new Date().getFullYear();
   document.querySelector("#page-update").textContent = `Last Updated: ${document.lastModified}`;
 
+  // Temple data
   const temples = [
     { templeName: "Aba Nigeria", location: "Aba, Nigeria", dedicated: "2005, August, 7", area: 11500,
       imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg" },
@@ -26,15 +28,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const gallery = document.querySelector("#gallery");
   const heading = document.querySelector("#gallery-heading");
 
+  // Helper: extract year
   function getYearFromDedicated(dedicatedStr) {
     const y = parseInt(dedicatedStr, 10);
     return Number.isFinite(y) ? y : null;
   }
 
+  // Clear gallery
   function clearTemples() {
-    gallery.querySelectorAll("figure").forEach(f => f.remove());
+    gallery.innerHTML = "";
   }
 
+  // Render gallery
   function showTemples(list) {
     clearTemples();
     list.forEach(t => {
@@ -65,10 +70,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Initial load
   heading.textContent = "All Temples";
   heading.style.color = "#e91e63";
   showTemples(temples);
 
+  // Filter links
   const navLinks = document.querySelectorAll('#nav-menu a[data-filter]');
   navLinks.forEach(link => {
     link.addEventListener("click", (e) => {
@@ -97,6 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
       heading.style.color = "#e91e63";
       showTemples(filtered);
 
+      // close mobile menu
       const navList = document.querySelector("#nav-menu ul");
       if (navList.classList.contains("show")) {
         navList.classList.remove("show");
@@ -106,6 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Mobile menu toggle
   const menuButton = document.getElementById("menu-button");
   const navList = document.querySelector("#nav-menu ul");
   menuButton.addEventListener("click", () => {
