@@ -4,45 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Temple Album</title>
-  <meta name="description" content="Olalemi Emmanuel |The Church of Jesus Christ | Responsive Temple Album Page" />
+  <meta name="description" content="Olalemi Emmanuel |The Church of Jesus Christ Filtered Temple Picture Album | Responsive Temple Album Page" />
   <meta name="author" content="Olalemi Emmanuel" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="styles/filter-temples.css" />
   <link rel="stylesheet" href="styles/filter-temples-large.css" />
-  <script src="scripts/filter_temple.js" defer></script>
+  <script src="scripts/filter-temple.js"></script>
 
 </head>
 <body>
   <header>
     <h1>Temple Album</h1>
-    <button id="menu">☰</button>
-    <nav class="navigation">
-      <a href="#">Home</a>
-      <a href="#">Old</a>
-      <a href="#">New</a>
-      <a href="#">Large</a>
-      <a href="#">Small</a>
+    <button id="menu-button" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle Menu">☰</button>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="#" data-filter="home">Home</a></li>
+        <li><a href="#" data-filter="old">Old</a></li>
+        <li><a href="#" data-filter="new">New</a></li>
+        <li><a href="#" data-filter="large">Large</a></li>
+        <li><a href="#" data-filter="small">Small</a></li>      </ul>
     </nav>
   </header>
 
   <main>
-    <h2>Temples</h2>
-    <div class="grid">
-      <figure>
-        <img src="images/temple-1.jpg" alt="Temple 1" />
-        <figcaption>Temple 1</figcaption>
-      </figure>
-      <figure>
-        <img src="images/temple-2.jpg" alt="Temple 2" />
-        <figcaption>Temple 2</figcaption>
-      </figure>
-    </div>
+    <h2 id="gallery-heading">Temples</h2>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> | Olalemi | Lagos, Nigeria</p>
+    <p>&copy; <span id="year-now"></span> | Olalemi | Lagos, Nigeria</p>
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 
