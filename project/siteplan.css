@@ -1,0 +1,72 @@
+/* Base styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f5f5f5;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background-color: #c62828;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* Section styles */
+main section {
+  background-color: white;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 1.5rem;
+  color: #c62828;
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Wireframe image styles */
+img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
