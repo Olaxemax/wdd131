@@ -4,7 +4,7 @@ body {
   background-color: #f5f5f5;
   color: #1a1a1a;
   margin: 0;
-  padding: 20px;
+  padding: 0;
   line-height: 1.6;
 }
 
@@ -14,7 +14,12 @@ header {
   color: white;
   padding: 1.5rem;
   text-align: center;
-  border-radius: 8px;
+}
+
+header .logo {
+  max-width: 120px;
+  display: block;
+  margin: 0 auto 1rem;
 }
 
 header h1 {
@@ -28,7 +33,38 @@ header p {
   font-style: italic;
 }
 
+/* Navigation styles */
+nav {
+  background-color: #1a1a1a;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #c62828;
+}
+
 /* Section styles */
+main {
+  padding: 20px;
+}
+
 main section {
   background-color: white;
   padding: 1.5rem;
@@ -52,13 +88,14 @@ li {
   margin-bottom: 0.5rem;
 }
 
-/* Wireframe image styles */
-img {
-  max-width: 100%;
-  height: auto;
+/* Wireframe styles */
+pre.wireframe {
+  background-color: #f0f0f0;
+  padding: 1rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-top: 0.5rem;
+  border-radius: 6px;
+  font-family: monospace;
+  overflow-x: auto;
 }
 
 /* Footer styles */
@@ -67,6 +104,5 @@ footer {
   padding: 1rem;
   background-color: #1a1a1a;
   color: white;
-  border-radius: 8px;
   font-size: 0.9rem;
 }
