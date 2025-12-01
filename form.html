@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Product Review Form for BYUI WDD131 Week 05 Assignment">
+  <meta name="author" content="Olalemi">
   <title>Product Review Form</title>
   <link rel="stylesheet" href="styles.css">
   <script src="scripts.js" defer></script>
@@ -19,7 +21,6 @@
       <label for="product">Product Name</label>
       <select id="product" name="product" required>
         <option value="" disabled selected>Select a Product...</option>
-        <!-- Options populated by JS -->
       </select>
 
       <!-- Rating -->
@@ -46,10 +47,17 @@
       <!-- Features -->
       <fieldset>
         <legend>Useful Features</legend>
-        <label><input type="checkbox" name="features" value="durability"> Durability</label>
-        <label><input type="checkbox" name="features" value="design"> Design</label>
-        <label><input type="checkbox" name="features" value="performance"> Performance</label>
-        <label><input type="checkbox" name="features" value="value"> Value for Money</label>
+        <input type="checkbox" id="feature1" name="features" value="durability">
+        <label for="feature1">Durability</label>
+
+        <input type="checkbox" id="feature2" name="features" value="design">
+        <label for="feature2">Design</label>
+
+        <input type="checkbox" id="feature3" name="features" value="performance">
+        <label for="feature3">Performance</label>
+
+        <input type="checkbox" id="feature4" name="features" value="value">
+        <label for="feature4">Value for Money</label>
       </fieldset>
 
       <!-- Written Review -->

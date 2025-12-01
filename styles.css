@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -95,9 +96,48 @@ legend {
   background: #34495e;
 }
 
+.confirmation {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.confirmation p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+
 footer {
   text-align: center;
   margin-top: 30px;
   font-size: 0.9rem;
   color: #777;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .review-form {
+    padding: 15px;
+  }
+
+  .rating label {
+    font-size: 1.5rem;
+  }
+
+   .confirmation {
+    padding: 20px;
+  }
+
+  .confirmation p {
+    font-size: 1rem;
+  }
+
 }
