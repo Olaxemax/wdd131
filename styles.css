@@ -18,6 +18,8 @@ nav ul {
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
 nav a {
@@ -36,6 +38,19 @@ nav a.active {
   background: #B8E0D2;
   border-radius: 10px;
   margin: 2rem;
+}
+
+.banner-container {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.banner-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 button {
