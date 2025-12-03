@@ -1,4 +1,6 @@
-// Theme Toggle
+// ==========================
+// Theme Toggle with localStorage
+// ==========================
 const body = document.body;
 const themeToggle = document.getElementById("themeToggle");
 
@@ -14,7 +16,9 @@ if (localStorage.getItem("theme") === "dark") {
   body.classList.add("dark-theme");
 }
 
+// ==========================
 // Newsletter Form
+// ==========================
 const form = document.getElementById("newsletterForm");
 const confirmation = document.getElementById("confirmation");
 
@@ -27,7 +31,9 @@ if (form) {
   });
 }
 
+// ==========================
 // Contact Form
+// ==========================
 const contactForm = document.getElementById("contactForm");
 const contactConfirmation = document.getElementById("contactConfirmation");
 
@@ -40,7 +46,9 @@ if (contactForm) {
   });
 }
 
-// ✅ JavaScript Object
+// ==========================
+// JavaScript Object Example
+// ==========================
 const student = {
   name: "Olalemi",
   program: "BYU Pathway",
@@ -48,6 +56,17 @@ const student = {
 };
 console.log(`Student: ${student.name}, Program: ${student.program}`);
 
-// ✅ JavaScript Array + Method
+// ==========================
+// JavaScript Array + Method
+// ==========================
 const calmColors = ["blue", "green", "lavender", "beige"];
 calmColors.forEach(color => console.log(`Calm color: ${color}`));
+
+// ==========================
+// Conditional Branching Example
+// ==========================
+if (student.hobbies.includes("music")) {
+  console.log(`${student.name} enjoys listening to music 🎶`);
+} else {
+  console.log(`${student.name} has other hobbies.`);
+}
