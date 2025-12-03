@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me</title>
+  <title>Contact</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,28 +11,41 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="references.html">References</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <h1>About Me 🌿</h1>
-      <p>Hello! I'm a web development student of BYU Pathway.  
-         I love listening to music and travelling ✈️🎶.</p>
+      <h1>Contact Me 🌸</h1>
+      <p>I'd love to hear from you! Whether it's about web development, music, or travel, feel free to reach out.</p>
     </section>
 
-    <section class="details">
-      <h2>My Journey</h2>
-      <p>Learning web development has been an exciting adventure.  
-         I enjoy creating websites that feel calm, colorful, and welcoming.</p>
+    <section class="form-section">
+      <h2>Send a Message</h2>
+      <form id="contactForm">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+      <p id="contactConfirmation"></p>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Calm Project | <a href="references.html">References</a></p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
