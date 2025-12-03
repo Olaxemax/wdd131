@@ -17,12 +17,17 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 nav a {
   text-decoration: none;
   color: #34495E;
   font-weight: bold;
+}
+
+nav a.active {
+  border-bottom: 2px solid #34495E;
 }
 
 .hero {
@@ -53,6 +58,13 @@ button:hover {
   border-radius: 10px;
 }
 
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #CDB4DB;
+}
+
+/* Dark Theme */
 .dark-theme {
   background-color: #34495E;
   color: #F6E7CB;
@@ -66,12 +78,7 @@ button:hover {
   color: #F6E7CB;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #CDB4DB;
-}
-
+/* Mobile adjustments */
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
